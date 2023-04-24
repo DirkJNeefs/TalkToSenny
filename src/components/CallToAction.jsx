@@ -1,6 +1,7 @@
 import { AppStoreLink } from '@/components/AppStoreLink'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
+import Image from 'next/image'
 
 export function CallToAction() {
   return (
@@ -20,10 +21,10 @@ export function CallToAction() {
             Contact us at rik@blackbearlabs.ai or on twitter:
           </p>
           <div className="mt-8 flex justify-center">
-                      <a href="https://twitter.com/rikvk01" target="_blank" className="group block flex-shrink-0">
+                      <a href="https://twitter.com/rikvk01"  className="group block flex-shrink-0">
                           <div className="flex items-center">
                               <div>
-                                  <img
+                                  <Image
                                       className="inline-block h-16 w-16 rounded-full"
                                       src="https://pbs.twimg.com/profile_images/1599872650402320387/i9mEGZCT_400x400.jpg"
                                       alt=""

@@ -207,7 +207,7 @@ export function Pricing() {
             Flat pricing, no useless tiers.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            Get access to all of Senny's features instantly, without any headaches or restrictions.
+            Get access to all of Senny`&apos;`,s features instantly, without any headaches or restrictions.
           </p>
         </div>
 
