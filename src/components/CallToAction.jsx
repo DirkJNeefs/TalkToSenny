@@ -26,7 +26,7 @@ export function CallToAction() {
                               <div>
                                   <Image
                                       className="inline-block h-16 w-16 rounded-full"
-                                      src="https://pbs.twimg.com/profile_images/1599872650402320387/i9mEGZCT_400x400.jpg"
+                                      src="Rik_400x400.jpg"
                                       alt=""
                                   />
                               </div>
