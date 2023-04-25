@@ -101,12 +101,8 @@ export function Header() {
                             <MobileNavLink href="#secondary-features">
                               Features
                             </MobileNavLink>
-                            <MobileNavLink href="#reviews">
-                              Reviews
-                            </MobileNavLink>
-                            <MobileNavLink href="#pricing">
-                              Pricing
-                            </MobileNavLink>
+                            
+                            
                              <MobileNavLink href="#faqs">FAQs</MobileNavLink>
                               <MobileNavLink href="#contact">Contact</MobileNavLink>
                           </div>
@@ -138,3 +134,9 @@ export function Header() {
     </header>
   )
 }
+<MobileNavLink href="#pricing">
+    Pricing
+</MobileNavLink>,
+<MobileNavLink href="#reviews">
+                              Reviews
+                            </MobileNavLink>
