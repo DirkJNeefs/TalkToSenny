@@ -2,6 +2,7 @@ import { useId, useRef, useState } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
 import { motion, useInView, useMotionValue } from 'framer-motion'
+import Link from 'next/link'
 
 import { AppScreen } from '@/components/AppScreen'
 import { AppStoreLink } from '@/components/AppStoreLink'
@@ -16,6 +17,8 @@ import logoForbes from '@/images/logos/forbes.svg'
 import logoHuffpost from '@/images/logos/huffpost.svg'
 import logoTechcrunch from '@/images/logos/techcrunch.svg'
 import logoWired from '@/images/logos/wired.svg'
+
+import qrCode from '@/images/qr-code.svg'
 
 function BackgroundIllustration(props) {
   let id = useId()
@@ -258,7 +261,7 @@ function AppDemo() {
    
           <div>
 
-              <Image src="Senny-screenshot.jpg" alt="Phone convers" />
+              <img src="Senny-screenshot.jpg" alt="Phone convers" />
 
           </div>
    
@@ -278,9 +281,10 @@ export function Hero() {
                           Meet Senny, the chatbot that helps you learn Spanish on WhatsApp!
                           Practice your skills, learn interesting facts about Spain, and improve your listening with audio messages.
                           Plus, Senny can translate text from pictures to help you learn new vocabulary. ¡Vamos a aprender juntos con Senny!
-            </p>
+                      </p>
+                      {/*
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
-                          {/* <AppStoreLink />*/}
+                           <AppStoreLink />
               <Button
                               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                               target= "blank"
@@ -290,7 +294,8 @@ export function Hero() {
                 <PlayIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2.5 text-white">Watch the video</span>
               </Button>
-            </div>
+                      </div>
+                      */}
           </div>
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
             <BackgroundIllustration className="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
@@ -302,33 +307,43 @@ export function Hero() {
                   </div>
 
                   {
-          <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
-            <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">
-              As featured in
-            </p>
-            <ul
-              role="list"
-              className="mx-auto mt-8 flex max-w-xl flex-wrap justify-center gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"
-            >
-              {[
-                ['Forbes', logoForbes],
-                ['TechCrunch', logoTechcrunch],
-                ['Wired', logoWired],
-                ['CNN', logoCnn, 'hidden xl:block'],
-                ['BBC', logoBbc],
-                ['CBS', logoCbs],
-                ['Fast Company', logoFastCompany],
-                ['HuffPost', logoHuffpost, 'hidden xl:block'],
-              ].map(([name, logo, className]) => (
-                <li key={name} className={clsx('flex', className)}>
-                  <Image src={logo} alt={name} className="h-8" unoptimized />
-                </li>
-              ))}
-            </ul>
-                  </div>
+                      <div className="flex inline relative mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
+                          <div className="relative flex h-48 w-48 flex-none items-center justify-center">
+                              <QrCodeBorder className="absolute inset-0 h-full w-full stroke-gray-300 transition-colors group-hover:stroke-cyan-500" />
+                              <Image src={qrCode} alt="" unoptimized  />
+                          </div>
+
+                          <div className="flex items-center justify-center h-full">
+                          <div className="ml-8 lg:w-72">
+                              <p className="text-2xl font-semibold text-gray-900">
+                                  <Link href="#">
+                                      <span className="absolute  inset-0 sm:rounded-2xl" />
+                                      Talk To Senny
+                                  </Link>
+                              </p>
+                              <p className="mt-1 text-lg text-gray-700">
+                                  Scan the QR code to start chatting with Senny.
+                                  </p>
+
+                              </div>
+                          </div>
+                      </div>
                   }
         </div>
       </Container>
     </div>
+  )
+}
+
+
+function QrCodeBorder(props) {
+  return (
+    <svg viewBox="0 0 96 96" fill="none" aria-hidden="true" {...props}>
+      <path
+        d="M1 17V9a8 8 0 0 1 8-8h8M95 17V9a8 8 0 0 0-8-8h-8M1 79v8a8 8 0 0 0 8 8h8M95 79v8a8 8 0 0 1-8 8h-8"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
+    </svg>
   )
 }

@@ -24,10 +24,11 @@ export function CallToAction() {
                       <a href="https://twitter.com/rikvk01"  className="group block flex-shrink-0">
                           <div className="flex items-center">
                               <div>
-                                  <Image
-                                      className="inline-block h-16 w-16 rounded-full"
+                                  <img
+                                      className="inline-block h-16 w-16 rounded-full width-400"
                                       src="Rik_400x400.jpg"
                                       alt=""
+                                      
                                   />
                               </div>
                               <div className="ml-3">
