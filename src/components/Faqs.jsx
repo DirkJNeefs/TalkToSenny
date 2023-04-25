@@ -12,7 +12,7 @@ const faqs = [
         {
             question: "How does Senny's voice recognition work?",
             answer:
-                "Senny's voice recognition feature transcribes your voice audio to text, allowing you to practice your Spanish pronunciation without worrying about making mistakes. The bot listens to your voice and provides based on what it understood, you can ask him to provide gramatical feedback on your sentences.",
+                "Senny's voice recognition feature transcribes your voice audio to text, allowing you to practice your Spanish pronunciation without worrying about making mistakes. The bot listens to your voice and provides based on what it understood, you can ask to provide gramatical feedback on your sentences.",
         },
         {
             question: "How does the image recognition feature work?",
