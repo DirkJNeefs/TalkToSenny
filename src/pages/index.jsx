@@ -17,7 +17,7 @@ export default function Home() {
         <title>Senny - Your pocket-sized Spanish language expert.</title>
         <meta
           name="description"
-          content="By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses."
+                  content="Meet Senny, the chatbot that helps you learn Spanish on WhatsApp! Practice your skills, learn interesting facts about Spain, and improve your listening with audio messages. Plus, Senny can translate text from pictures to help you learn new vocabulary. ¡Vamos a aprender juntos con Senny!"
         />
       </Head>
       <Header />

@@ -69,8 +69,8 @@ export function Faqs() {
           <p className="mt-2 text-lg text-gray-600">
             If you have anything else you want to ask,{' '}
             <Link
-              href="mailto:rik@purplepanda.be"
-              className="text-gray-900 underline"
+              href="mailto:rik@blackbearlabs.ai"
+              className="text-green-500 underline"
             >
               reach out to us
             </Link>

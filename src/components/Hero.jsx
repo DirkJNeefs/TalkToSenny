@@ -261,7 +261,7 @@ function AppDemo() {
    
           <div>
 
-              <img src="Senny-screenshot.jpg" alt="Phone convers" />
+              <img src="Senny-screenshot.png" alt="Phone convers" />
 
           </div>
    
