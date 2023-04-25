@@ -113,7 +113,7 @@ export function Header() {
                             </Button>
 
                                 */}
-                            <Button href="#">Meet Senny</Button>
+                                                      <Button href="#" className="gradient-rgb(42, 211, 103)-rgb(19, 69, 41)">Meet Senny</Button>
                           </div>
                         </Popover.Panel>
                       </>
@@ -125,7 +125,7 @@ export function Header() {
                       {/*<Button href="/login" variant="outline" className="hidden lg:block">
               Log in
             </Button>*/}
-            <Button href="#" className="hidden lg:block">
+                      <Button href="#" className="hidden lg:block">
               Meet Senny
             </Button>
           </div>

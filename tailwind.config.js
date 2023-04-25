@@ -38,6 +38,8 @@ module.exports = {
           'green-500': 'rgb(40, 211, 103)',
           'black': 'rgb(23, 23, 23)',
           'white': 'rgb(250, 250, 250)',
+          'green-200':'rgb(19, 69, 41)',
+          'green-300':'rgb(42, 211, 103)',
       }),
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],

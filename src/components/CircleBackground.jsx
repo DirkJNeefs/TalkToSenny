@@ -26,15 +26,14 @@ export function CircleBackground({
           y2="237"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={color} />
-          <stop offset="1" stopColor={color} stopOpacity="0" />
+                  <stop stopColor="rgb(42, 211, 103)" />
+                  <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
       <path
-        opacity=".2"
+        opacity=".6"
         d="M1 279C1 125.465 125.465 1 279 1s278 124.465 278 278-124.465 278-278 278S1 432.535 1 279Z"
-        stroke={color}
-      />
+              stroke="white"     />
       <path
         d="M1 279C1 125.465 125.465 1 279 1"
         stroke={`url(#${id})`}

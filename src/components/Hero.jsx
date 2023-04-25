@@ -33,8 +33,8 @@ function BackgroundIllustration(props) {
       >
         <path
           d="M1025 513c0 282.77-229.23 512-512 512S1 795.77 1 513 230.23 1 513 1s512 229.23 512 512Z"
-                  stroke="#28d367"
-          strokeOpacity="0.7"
+                  stroke="rgb(19, 69, 41)"
+          strokeOpacity="0.8"
         />
         <path
           d="M513 1025C230.23 1025 1 795.77 1 513"
@@ -50,8 +50,8 @@ function BackgroundIllustration(props) {
             y2="1025"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#06b6d4" />
-            <stop offset="1" stopColor="#06b6d4" stopOpacity="0" />
+                      <stop stopColor="rgb(42, 211, 103)" />
+                      <stop offset="1" stopColor="rgb(19, 69, 41)" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>
@@ -63,7 +63,7 @@ function BackgroundIllustration(props) {
       >
         <path
           d="M913 513c0 220.914-179.086 400-400 400S113 733.914 113 513s179.086-400 400-400 400 179.086 400 400Z"
-          stroke="#D4D4D4"
+          stroke="#rgb(42, 211, 103)"
           strokeOpacity="0.7"
         />
         <path
@@ -80,8 +80,8 @@ function BackgroundIllustration(props) {
             y2="913"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#06b6d4" />
-            <stop offset="1" stopColor="#06b6d4" stopOpacity="0" />
+                      <stop stopColor="rgb(42, 211, 103)" />
+                      <stop offset="1" stopColor="rgb(42, 211, 103)" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>
@@ -181,14 +181,14 @@ function Chart({
           <path d={`${path} V ${height + paddingY} H ${paddingX} Z`} />
         </clipPath>
         <linearGradient id={`${id}-gradient`} x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0%" stopColor="#13B5C8" />
-          <stop offset="100%" stopColor="#13B5C8" stopOpacity="0" />
+                  <stop offset="0%" stopColor="rgb(19, 69, 41)" />
+                  <stop offset="100%" stopColor="rgb(42, 211, 103)" stopOpacity="0" />
         </linearGradient>
       </defs>
       {[...Array(gridLines - 1).keys()].map((index) => (
         <line
           key={index}
-          stroke="#a3a3a3"
+              stroke="rgb(42, 211, 103)"
           opacity="0.1"
           x1="0"
           y1={(totalHeight / gridLines) * (index + 1)}
@@ -213,7 +213,7 @@ function Chart({
         strokeLinejoin="round"
         initial={{ pathLength: 0 }}
         transition={{ duration: 1 }}
-        {...(isInView ? { stroke: '#06b6d4', animate: { pathLength: 1 } } : {})}
+              {...(isInView ? { stroke: 'rgb(42, 211, 103)', animate: { pathLength: 1 } } : {})}
         onUpdate={({ pathLength }) => {
           pathWidth.set(
             pathRef.current.getPointAtLength(
@@ -230,16 +230,16 @@ function Chart({
             y1={points[activePointIndex].y}
             x2={totalWidth}
             y2={points[activePointIndex].y}
-            stroke="#06b6d4"
+                      stroke="rgb(42, 211, 103)"
             strokeDasharray="1 3"
           />
           <circle
             r="4"
             cx={points[activePointIndex].x}
             cy={points[activePointIndex].y}
-            fill="#fff"
+            fill="#rgb(42, 211, 103)"
             strokeWidth="2"
-            stroke="#06b6d4"
+                      stroke="rgb(42, 211, 103)"
           />
         </>
       )}
