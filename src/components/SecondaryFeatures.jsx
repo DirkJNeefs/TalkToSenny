@@ -3,7 +3,13 @@ import { useId } from 'react'
 import { Container } from '@/components/Container'
 
 const features = [
-    
+
+    {
+        name: 'Voice messages',
+        description:
+            'Senny can receive voice messages sent through WhatsApp. Just talk like you would do to a friend.',
+        icon: DeviceChartIcon,
+    },
     {
         name: 'Accurate and sassy responses',
         description:
@@ -34,12 +40,7 @@ const features = [
             'Senny sometimes shares interesting or funny facts about Spain to keep the conversation engaging and entertaining.',
         icon: DeviceCardsIcon,
     },
-    {
-        name: 'Voice messages',
-        description:
-            'Senny can receive voice messages sent through WhatsApp. Just talk like you would do to a friend.',
-        icon: DeviceChartIcon,
-    },
+    
 ]
 
 

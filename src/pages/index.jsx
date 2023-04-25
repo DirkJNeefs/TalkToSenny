@@ -36,7 +36,7 @@ export default function Home() {
   )
 }
 <PrimaryFeatures />,
-  <Reviews />,
+<Reviews />,
 <CallToAction />,
 
 <Pricing />
