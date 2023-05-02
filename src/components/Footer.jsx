@@ -44,7 +44,7 @@ export function Footer() {
             </div>
             <div className="ml-8 lg:w-64">
               <p className="text-base font-semibold text-gray-900">
-                <Link href="#">
+                              <Link href="https://api.whatsapp.com/send/?phone=32485232712&text=Hola%21&type=phone_number&app_absent=0">
                   <span className="absolute inset-0 sm:rounded-2xl" />
                   Download the app
                 </Link>

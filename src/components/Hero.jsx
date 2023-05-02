@@ -316,7 +316,7 @@ export function Hero() {
                           <div className="flex items-center justify-center h-full">
                           <div className="ml-8 lg:w-72">
                               <p className="text-2xl font-semibold text-gray-900">
-                                  <Link href="#">
+                                      <Link href="https://api.whatsapp.com/send/?phone=32485232712&text=Hola%21&type=phone_number&app_absent=0">
                                       <span className="absolute  inset-0 sm:rounded-2xl" />
                                       Talk To Senny
                                   </Link>
